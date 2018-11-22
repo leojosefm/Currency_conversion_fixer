@@ -4,16 +4,14 @@ import pandas as pd
 from pandas.io.json import json_normalize
 
 ## Fetch key from an external config file
-"""
+
 import os
 path = os.getenv('USERPROFILE')
 filename = path+'\\fixer_access_key.txt'
 file=open(filename,'r')
 for line in file:
     access_key = line.split('=')[1]
-"""
 
-access_key='d544367142a2a59b91a2767218b02251'
 
 class webservice:
     def __init__(self,access_key):
