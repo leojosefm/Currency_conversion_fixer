@@ -91,5 +91,5 @@ if __name__ == '__main__':
     historical_data = main()
     csv_flag = input('please press Y/N to write historical data to a csv file: ')
     if csv_flag=='Y':
-        historical_data.to_csv('historica_conversion_rate.csv',index=False)
+        historical_data.to_csv('historical_conversion_rate.csv',index=False)
 
